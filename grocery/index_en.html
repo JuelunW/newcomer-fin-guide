@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newcomer Finland Guide</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logolike" href="../home/index_en.html">Newcomer Finland Guide</a>
+        <nav>
+            <ul>
+                <li><a style="padding-left: 0px;" href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ch">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">tiếng việt</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <section class="dropdown">
+            <img class="burger-icon" src="../assets/burger-menu-svgrepo-com.svg" alt="burger icon" />
+            <ul class="dropdown-menu">
+                <li><a href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ch">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">tiếng việt</option>
+                    </select>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <article class="large-card" style="text-align: center;">
+        <!-- Icon - A simple SVG wrench for construction -->
+        <section class="icon-container">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                </path>
+            </svg>
+        </section>
+        <h1 style="color: #1f2937; margin: 24px auto">Page Under Construction 🚧</h1>
+        <p>
+            We're busy polishing the final features to bring you a fantastic new experience. This page is building
+            and will be live very soon!
+        </p>
+
+        <section class="progress-container">
+            <p class="progress-label">Progress: 75% Complete</p>
+            <section class="progress-bar">
+                <section class="progress-bar-fill"></section>
+            </section>
+        </section>
+
+        <section class="cta-box">
+            <p>Want to be notified when we launch?</p>
+            <form onsubmit="event.preventDefault(); showThankYou();" class="form-flex">
+                <input type="email" id="emailInput" placeholder="Enter your email address" required class="form-input">
+                <button type="submit" class="form-button">
+                    Notify Me
+                </button>
+            </form>
+            <p id="thankYouMessage" class="message-success">Thank you! We'll be in touch soon.</p>
+        </section>
+    </article>
+
+    <script>
+        // Simple function to display a confirmation message instead of an alert()
+        function showThankYou() {
+            const emailInput = document.getElementById('emailInput');
+            const thankYouMessage = document.getElementById('thankYouMessage');
+
+            if (emailInput.value) {
+                // Use the 'visible' class to show the message
+                thankYouMessage.classList.add('visible');
+                emailInput.value = ''; // Clear the input
+
+                // Hide the message after a few seconds
+                setTimeout(() => {
+                    thankYouMessage.classList.remove('visible');
+                }, 4000);
+            }
+        }
+    </script>
+</body>
+
+</html>

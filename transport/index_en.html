@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newcomer Finland Guide</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logolike" href="../home/index_en.html">Newcomer Finland Guide</a>
+        <nav>
+            <ul>
+                <li><a style="padding-left: 0px;" href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ch">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">tiếng việt</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <section class="dropdown">
+            <img class="burger-icon" src="../assets/burger-menu-svgrepo-com.svg" alt="burger icon" />
+            <ul class="dropdown-menu">
+                <li><a href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ch">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">tiếng việt</option>
+                    </select>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <article class="title-card">
+            <h1>Public transportation</h1>
+            <p>
+                This page introduces the public transportation system in Finland, including buses, trams, metros,
+                trains, and city bikes. It also provides information on how to purchase tickets and where to find
+                service points.
+            </p>
+        </article>
+        <section class="large-card">
+            <iframe src="../assets/p1.jpg" name="gallery" title="Image of Finland public transport"></iframe>
+            <nav>
+                <a href="../assets/p1.jpg" target="gallery">1</a>
+                <a href="../assets/p2.jpg" target="gallery">2</a>
+                <a href="../assets/p3.jpg" target="gallery">3</a>
+                <a href="../assets/p4.jpg" target="gallery">4</a>
+
+                <a href="../assets/metro-rectangle.svg" target="gallery">5</a>
+            </nav>
+        </section>
+        <article class="large-card">
+            <h2>How are ticket prices calculated?</h2>
+            <p>
+                Ticket prices in Finland are generally calculated based on the distance traveled and the zones you
+                pass through. Different cities and regions may have their own fare systems, so it's important to check
+                the specific rules for the area you are in.
+            </p>
+            <h2>What are zones?</h2>
+            <p>
+                Take HSL as an example.<br><br>The HSL area is divided into four zones: A, B, C, and D. Zone A covers
+                the
+                city
+                center of Helsinki, while zones B, C, and D cover the surrounding areas. The fare you pay depends on how
+                many zones you travel through.
+            </p>
+            <h2>Different color means different routs</h2>
+            <p>Take HSL as an example.<br><br>This color-coding is used on maps, at stops, and on the vehicles
+                themselves to
+                help passengers quickly identify the different types of transport and their routes.
+            </p>
+            <section style="text-align: center; margin-bottom: 64px;">
+                <p style="display: inline-block;">
+                    <img class="small-logo" src="../assets/bus-rectangle.svg" alt="Blue for Bus icon" />
+                    Bus,
+                </p>
+                <p style="display: inline-block;">
+                    <img class="small-logo" src="../assets/tram-rectangle.svg" alt="Green for Tram icon" />
+                    Tram,
+                </p>
+                <p style="display: inline-block;">
+                    <img class="small-logo" src="../assets/light-rail.svg" alt="Turquoise for Light rail icon" />
+                    Light Rail,
+                </p>
+                <p style="display: inline-block;">
+                    <img class="small-logo" src="../assets/metro-rectangle.svg" alt="Orange for Metro icon" />
+                    Metro,
+                </p>
+                <p style="display: inline-block;">
+                    <img class="small-logo" src="../assets/train-rectangle.svg" alt="Purple for train icon" />
+                    Train,
+                </p>
+                <p style="display: inline-block;">
+                    <img class="small-logo" src="../assets/ferry-rectangle.svg" alt="Light blue for Ferry icon" />
+                    Ferry
+                </p>
+            </section>
+            <h2>City Bike</h2>
+            <p>Take Helsinki as an example.<br><br>The bike system in Helsinki and Espoo is different from
+                the system used in Vantaa, and bikes from the two different systems cannot be used interchangeably.
+            </p>
+            <section style="text-align: center; margin-bottom: 64px;">
+                <img style="width: clamp(200px, 50%, 500px);" src="../assets/2021-03-16-city-bikes-wide.jpg"
+                    alt="City bike" />
+            </section>
+            <h2>E-scooter</h2>
+            <p>E-scooters are operated by private companies. You usually need to download their own app to use it. In
+                general, the price is counted by the time you used.</p>
+            <h2 id="vr">VR</h2>
+            <aside class="aside-left">
+                <img style="width: 35px; margin: 8px 8px 8px 0; border-radius: 8px;" src="../assets/VR-logo.webp"
+                    alt="VR icon" />
+            </aside>
+            <p>
+                VR is the main train operator in Finland. It provides long-distance transport. You can check the
+                schedule
+                and buy tickets on their app, online, or ticket machines. Children, students, pensioners, conscripts and
+                persons undergoing non-military service get a discount on train tickets. Groups with more than 18
+                persons can ask for a discount from our Group Sales.
+            </p>
+            <section style="text-align: center; margin: 32px 0;">
+                <a href="#full-screen-modal">
+                    <img style="width: clamp(200px, 50%, 500px); border-radius: 8px;" src="../assets/VR-map.png"
+                        alt="VR map" />
+                </a>
+            </section>
+        </article>
+        <a id="full-screen-modal" href="#vr">
+            <img src="../assets/VR-map.png" />
+        </a>
+        <article class="large-card">
+            <h2>Where to buy</h2>
+            <ul class="option-list">
+                <li>
+                    <h4>Mobile app</h4>
+                    <p class="font-4a5565">
+                        Download your city's public transport app. Buy your ticket there before onboarding.
+                    </p>
+                </li>
+                <p class="font-4a5565">or</p>
+                <li>
+                    <h4>Ticket machine</h4>
+                    <p class="font-4a5565">You may find a ticket machine at the large station. If you don't find any
+                        ticket machine, you would buy a ticket onboard.
+                    </p>
+                </li>
+                <p class="font-4a5565">or</p>
+                <li>
+                    <h4>Buy online</h4>
+                </li>
+            </ul>
+        </article>
+
+        <article class="large-card">
+            <h2>What's the next</h2>
+            <ul>
+                <li>
+                    <a href="../flow/index_en.html">The full step-by-step list.</a>
+                </li>
+                <li>
+                    <a class="font-4a5565" href="../kela/index_en.html">Applying for a Kela card</a>
+                </li>
+                <li>
+                    <a class="font-4a5565" href="../id/index_en.html">Applying for a Finnish ID card.</a>
+                </li>
+                <li>
+                    <a class="font-4a5565" href="../bank/index_en.html">Opening a bank account.</a>
+                </li>
+            </ul>
+        </article>
+    </main>
+
+    <section id="call-to-action">
+        <h2>🤔🤔🤔<br>Do you still have questions? Is there a typo?</h2>
+        <p>Please contact us without hesitation. We welcome your questions and reports.</p>
+        <a class="button" href="../contact/index_en.html">Contact us</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Newcomer Finland Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newcomer Finland Guide</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logolike" href="../home/index_en.html">Newcomer Finland Guide</a>
+        <nav>
+            <ul>
+                <li><a style="padding-left: 0px;" href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ch">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">tiếng việt</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <section class="dropdown">
+            <img class="burger-icon" src="../assets/burger-menu-svgrepo-com.svg" alt="burger icon" />
+            <ul class="dropdown-menu">
+                <li><a href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ch">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">tiếng việt</option>
+                    </select>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <form class="large-card">
+            <h2>Contact form</h2>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="How to call you" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="email@example.com"><br><br>
+            <section>
+                <label for="type">What is this message for?</label><br><br>
+                <section>
+                    <input type="radio" id="type" name="type" value="question">
+                    <label for="question">Question</label>
+                </section>
+                <section>
+                    <input type="radio" id="type" name="type" value="feedback">
+                    <label for="feedback">Feedback</label>
+                </section>
+                <section>
+                    <input type="radio" id="type" name="type" value="love">
+                    <label for="love">I love this site!</label>
+                </section>
+                <br><br>
+            </section>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="leave your message here"
+                required></textarea><br><br>
+            <input class="button" type="submit" value="Submit">
+        </form>
+        </form>
+    </main>
+    <section id="call-to-action">
+        <h2>Ready to Get Started?</h2>
+        <p>Our detailed guides simplify every step. Start your journey in Finland today!</p>
+        <a class="button" href="../flow/index_en.html">👉 Get Started 👈</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Newcomer Finland Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
