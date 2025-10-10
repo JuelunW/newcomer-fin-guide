@@ -1,5 +1,4 @@
 * {
-    color-scheme: light dark;
     color: light-dark(rgb(16, 24, 40), white);
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -15,8 +14,13 @@
 }
 
 body {
+    color-scheme: light dark;
     background-color: var(--bg-color);
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.darkmode {
+    color-scheme: dark;
 }
 
 h1 {
@@ -68,6 +72,7 @@ header {
     font-size: x-large;
     font-weight: bold;
     padding: 8px 0;
+    align-self: center;
 }
 
 header nav {
@@ -100,6 +105,7 @@ nav a:hover {
     font-family: 'inter', sans-serif;
     cursor: pointer;
     color: var(--secondary-color);
+    background-color: transparent;
     padding-left: 6px;
     transition: all 0.3s ease-in-out;
 }
@@ -113,7 +119,7 @@ nav a:hover {
     text-align: center;
     top: 0;
     border-radius: 8px;
-    box-shadow: 10px 15px 10px light-dark(rgba(0, 0, 0, 0.1),rgba(255,255,255, 0.1));
+    box-shadow: 10px 15px 10px light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
     margin: 60px 10%;
     padding: 48px 10%;
 }
@@ -159,13 +165,13 @@ nav a:hover {
     background-color: light-dark(white, darkgray);
     border-radius: 8px;
     border-top: 5px solid var(--primary-color);
-    box-shadow: 0px 4px 2px light-dark(rgba(0, 0, 0, 0.1),rgba(255,255,255, 0.2));
+    box-shadow: 0px 4px 2px light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
     transition: all 150ms ease-in-out;
 }
 
 .small-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px light-dark(rgba(0, 0, 0, 0.1),rgba(255,255,255, 0.2));
+    box-shadow: 0 10px 20px light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
 }
 
 .small-card p {
@@ -177,7 +183,7 @@ nav a:hover {
 .large-card {
     background-color: light-dark(white, darkgray);
     border-radius: 8px;
-    box-shadow: 0px 4px 2px light-dark(rgba(0, 0, 0, 0.1),rgba(255,255,255, 0.2));
+    box-shadow: 0px 4px 2px light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
     margin: 60px 10%;
     padding: 48px 10%;
 }
@@ -465,7 +471,7 @@ form>textarea:focus {
     min-width: 10rem;
     background-color: light-dark(white, darkgray);
     border-radius: 8px;
-    box-shadow: 0 4px 12px light-dark(rgba(0, 0, 0, 0.15),rgba(255,255,255, 0.15));
+    box-shadow: 0 4px 12px light-dark(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.15));
     border: 1px solid #f3f4f6;
 
     visibility: hidden;
@@ -679,9 +685,9 @@ p.progress-label {
     }
 }
 
-@media (max-width: 930px) {
-    .logolike {
-        width: 190px;
+@media (max-width: 950px) {
+    header {
+        display: block;
     }
 
     header nav {
@@ -689,15 +695,14 @@ p.progress-label {
     }
 }
 
-@media (max-width: 760px) {
-    .logolike {
-        width: auto;
-    }
-}
-
 @media (max-width: 700px) {
     header {
         padding: 12px 6%;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
     }
 
     .title-card {
@@ -726,9 +731,10 @@ p.progress-label {
     }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 570px) {
     header {
         padding: 12px 5%;
+        display: flex;
     }
 
     header nav {

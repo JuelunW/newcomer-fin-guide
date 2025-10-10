@@ -5,3 +5,8 @@ function changeLanguage(lang) {
 function thanks() {
     window.alert("Thank you very much!")
 }
+
+function toggleColorTheme() {
+    var ele = document.body;
+    ele.classList.toggle("darkmode");
+}
