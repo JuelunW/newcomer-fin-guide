@@ -7,6 +7,6 @@ function thanks() {
 }
 
 function toggleColorTheme() {
-    var ele = document.body;
-    ele.classList.toggle("darkmode");
+    var elem = document.body;
+    elem.classList.toggle("darkmode");
 }
