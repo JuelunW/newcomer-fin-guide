@@ -29,7 +29,11 @@
             </ul>
         </nav>
         <section class="dropdown">
-            <img class="burger-icon" src="../assets/burger-menu-svgrepo-com.svg" alt="burger icon" />
+            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
+                <rect x="10" y="12" width="20" height="2" fill="gray" />
+                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
+                <rect x="17" y="23" width="13" height="2" fill="gray" />
+            </svg>
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
@@ -46,59 +50,175 @@
             </ul>
         </section>
     </header>
-
-    <article class="large-card" style="text-align: center;">
-        <!-- Icon - A simple SVG wrench for construction -->
-        <section class="icon-container">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                </path>
-            </svg>
-        </section>
-        <h1 style="color: #1f2937; margin: 24px auto">Page Under Construction 🚧</h1>
-        <p>
-            We're busy polishing the final features to bring you a fantastic new experience. This page is building
-            and will be live very soon!
-        </p>
-
-        <section class="progress-container">
-            <p class="progress-label">Progress: 75% Complete</p>
-            <section class="progress-bar">
-                <section class="progress-bar-fill"></section>
-            </section>
-        </section>
-
-        <section class="cta-box">
-            <p>Want to be notified when we launch?</p>
-            <form onsubmit="event.preventDefault(); showThankYou();" class="form-flex">
-                <input type="email" id="emailInput" placeholder="Enter your email address" required class="form-input">
-                <button type="submit" class="form-button">
-                    Notify Me
-                </button>
-            </form>
-            <p id="thankYouMessage" class="message-success">Thank you! We'll be in touch soon.</p>
-        </section>
-    </article>
-
-    <script>
-        // Simple function to display a confirmation message instead of an alert()
-        function showThankYou() {
-            const emailInput = document.getElementById('emailInput');
-            const thankYouMessage = document.getElementById('thankYouMessage');
-
-            if (emailInput.value) {
-                // Use the 'visible' class to show the message
-                thankYouMessage.classList.add('visible');
-                emailInput.value = ''; // Clear the input
-
-                // Hide the message after a few seconds
-                setTimeout(() => {
-                    thankYouMessage.classList.remove('visible');
-                }, 4000);
-            }
-        }
-    </script>
+    <main>
+        <article class="title-card">
+            <aside class="aside-right" style="margin: 0 20px;">
+                <img style="width: 80px; margin: 0; " src="../assets/images/grocery.png" />
+            </aside>
+            <h1>Grocery Store</h1>
+        </article>
+        <article class="large-card">
+            <h2>Three largest groups and their brands</h2>
+            <ol class="step-list">
+                <li>
+                    <aside class="aside-right" style="margin: 0 15px;">
+                        <img style="width: 45px; margin: 0; " src="../assets/images/S_logo.png" alt="S Group's logo" />
+                    </aside>
+                    <h3>S Group / SOK</h3>
+                    <p>
+                        "S Group operates in the supermarket trade, the department store and specialty store trade, the
+                        fuels retail and service stations and the travel industry and hospitality business. Some
+                        regional cooperatives also engage in car dealership, car accessory, and hardware trade."
+                    </p>
+                    <ul class="option-list">
+                        <li>
+                            <h4>Prisma</h4>
+                            <aside class="aside-left" style="margin-right: 15px;">
+                                <img style="width: 100px; margin: 0; " src="../assets/images/Prisma-logo.png"
+                                    alt="Prisma logo" />
+                            </aside>
+                            <p>The largest one. They call themself as hypermarket and provide you with daily food and
+                                weekend treats at the lowe prices. Their wide selection also covers family and home
+                                supplies.</p>
+                        </li>
+                        <li>
+                            <h4>S-kaupat / S-market</h4>
+                            <aside class="aside-left" style="margin-right: 15px;">
+                                <img style="width: 100px; margin: 0; " src="../assets/images/s-kaupat-logo.webp"
+                                    alt="s-kaupat logo" />
+                            </aside>
+                            <p>This is the most common S Group's grocery store you see. It provides you daily needs.</p>
+                        </li>
+                        <li>
+                            <h4>Sale and Alepa</h4>
+                            <aside class="aside-left" style="margin-right: 15px;">
+                                <img style="width: 60px; margin: 0; " src="../assets/images/Sale_wordmark.png"
+                                    alt="Sale logo" />
+                                <img style="width: 70px; margin: 0; " src="../assets/images/alepa_logo.webp"
+                                    alt="Alepa logo" />
+                            </aside>
+                            <p>These two brands are more likely convenient store. Some of them open 24 hours.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <aside class="aside-right" style="margin: 0 15px;">
+                        <img style="width: 50px; margin: 0; " src="../assets/images/Kesko_logo.png"
+                            alt="K Group's logo" />
+                    </aside>
+                    <h3>K Group / Kesko</h3>
+                    <p>"K Group is the second biggest grocery trade operator in Finland."</p>
+                    <ul class="option-list">
+                        <li>
+                            <h4>K-Citymarket</h4>
+                            <aside class="aside-left" style="margin-right: 15px;">
+                                <img style="width: 170px; margin: 0; " src="../assets/images/K-Citymarket_logo.png"
+                                    alt="K-Citymarket logo" />
+                            </aside>
+                            <p>
+                                K-Citymarket is a modern, Finnish hypermarket that offers its customers extensive
+                                selections of food and home and speciality goods.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>K-Supermarket</h4>
+                            <aside class="aside-left" style="margin-right: 15px;">
+                                <img style="width: 180px; margin: 0; " src="../assets/images/K-Supermarket_logo.png"
+                                    alt="K-Supermarket logo" />
+                            </aside>
+                            <p>
+                                K-Supermarkets are better than standard food stores which always provide their customers
+                                with the season's best raw materials and ideas for cooking both every day and on special
+                                occasions.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>K-Market</h4>
+                            <img style="width: 100px; margin: 0; " src="../assets/images/K-Market_logo.png"
+                                alt="K-Market logo" />
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <aside class="aside-right" style="margin: 0 15px;">
+                        <img style="width: 70px; margin: 0; " src="../assets/images/Lidl-Logo.png" alt="Lidl logo" />
+                    </aside>
+                    <h3>Lidl</h3>
+                    <p>
+                        "Lidl's operations are based on a clear and simple concept that enables the best quality and low
+                        prices to be combined."
+                    </p>
+                </li>
+            </ol>
+        </article>
+        <article class="large-card">
+            <h2>You want a good price?</h2>
+            <p>
+                If you are not sensetive of price, just go to a grocery you like. If you want to save some money,
+                you have to become a member of each group.
+            </p>
+            <ul class="option-list">
+                <li>
+                    <h3>For S Group</h3>
+                    <p>
+                        <a href="https://digili.s-cloud.fi/?initialLang=fi&amp;src=skanava">
+                            Becoming a customer owner
+                        </a>
+                        , you will earn cash back based on your spent, up to 5%. You earn extra
+                        0.5% when you pay with S-Etukortti Visa which is your debit card with S-pankki.
+                    </p>
+                    <br>
+                    <p>
+                        * To do that, you have to open an bank account at S-pankki and
+                        <span style="font-style: italic; font-weight: bold">pay 100€</span>
+                        for becoming a customer owner. This fund could be returned to you after you cancel your
+                        membership. You will receive a temporary card before Visa card. There is no extra 0.5% with this
+                        temporary card.
+                    </p>
+                    <br>
+                    <a href="https://www.s-kanava.fi/en/">more benefits</a>
+                </li>
+                <li>
+                    <h3>For K Group</h3>
+                    <p>
+                        <a href="https://plussa.fi/liity">Joining K-Plussa</a>
+                        , you will get personallized offer every week.
+                        <br>
+                        In addition, if you are a higher education
+                        student you will get up to 5% cashback on your grocery purchuses.
+                    </p>
+                    <br>
+                    <a href="https://plussa.fi/k-plussa/plussa-network">more benefits</a>
+                </li>
+                <li>
+                    <h3>For Lidl</h3>
+                    <p>
+                        Registering for a Lidl Plus customer through your mobile Lidl Plus app, you will get cheaper
+                        price for some items.
+                    </p>
+                    <br>
+                    <a
+                        href="https://app.adjust.com/xhhdqf2?campaign=website&adgroup=footer&creative=badges&fallback=https%3A%2F%2Fapps.apple.com%2Ffi%2Fapp%2Flidl-plus%2Fid1238611143?l=fi&engagement_type=fallback_click">
+                        <img style="width: clamp(150px, 50%, 200px); margin: 0;"
+                            src="../assets/images/apple-store-fi-253231.svg" alt="apple app store">
+                    </a>
+                    <a
+                        href="https://app.adjust.com/xhhdqf2?campaign=website&adgroup=footer&creative=badges&fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.lidl.eci.lidlplus%26hl%3Dfi?l=fi&engagement_type=fallback_click">
+                        <img style="width: clamp(150px, 50%, 200px); margin: 0;"
+                            src="../assets/images/google-store-fi-253261.svg" alt="google store">
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </main>
+    <section id="call-to-action">
+        <h2>🤔🤔🤔<br>Do you still have questions? Is there a typo?</h2>
+        <p>Please contact us without hesitation. We are welcome for your questions and reports.</p>
+        <a class="button" href="../contact/index_en.html">Contact us</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Newcomer Finland Guide. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

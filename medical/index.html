@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newcomer Finland Guide</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logolike" href="../home/index_en.html">Newcomer Finland Guide</a>
+        <nav>
+            <ul>
+                <li><a style="padding-left: 0px;" href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ch">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">tiếng việt</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <section class="dropdown">
+            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
+                <rect x="10" y="12" width="20" height="2" fill="gray" />
+                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
+                <rect x="17" y="23" width="13" height="2" fill="gray" />
+            </svg>
+            <ul class="dropdown-menu">
+                <li><a href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ch">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">tiếng việt</option>
+                    </select>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <article class="title-card">
+            <aside class="aside-right" style="margin: 0 20px;">
+                <img style="width: 80px; margin: 0; " src="../assets/images/medical-support.png" />
+            </aside>
+            <h1>Medical help</h1>
+        </article>
+        <article class="large-card">
+            <h2>Emergency situations</h2>
+            <a href="https://112.fi/en/frontpage">🔗 Emergency Response Center official website</a>
+            <br><br>
+            <p>If you or another person are experiencing symptoms such as
+                <strong>chest pain, difficulties with breathing, paralysis symptoms, loss of consciousness, heavy
+                    bleeding or convulsions</strong>,
+                the situation is an emergency.
+            </p>
+            <ul class="option-list">
+                <li>
+                    <h3>Call the number 112</h3>
+                    <ul>
+                        <li>You can call the number with any phone, even without a SIM card.</li>
+                        <li>Wait patiently and do not hang up even if the line is busy.</li>
+                        <li>Answer the questions asked and follow the instructions given.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>OR, use the 112 Suomi mobile app</h3>
+                    <a href="https://apps.apple.com/fi/app/112-suomi/id998281396?l=fi">
+                        <img style="width: 125px; margin: 0;" src="../assets/images/apple-store-fi-253231.svg"
+                            alt="apple app store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=fi.digia.suomi112">
+                        <img style="width: 125px; margin: 0;" src="../assets/images/google-store-fi-253261.svg"
+                            alt="google store">
+                    </a>
+                </li>
+                <li>
+                    <h3>OR, send an emergency text message</h3>
+                    <p>Send a message to the number 112 and provide the following details:</p>
+                    <ul>
+                        <li>the municipality and address of the emergency location.</li>
+                        <li>what has happened.</li>
+                        <li>any additional details and your name.</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+
+        <article class="large-card">
+            <h2>Urgent situations</h2>
+            <ul class="option-list">
+                <li>
+                    <h3>Call the medical helpline 116117</h3>
+                    <p>They will tell you how quickly you should seek treatment and direct you to the right care
+                        facility. If there is no need for you to visit the health station for emergency services, you
+                        will receive care instructions by phone.
+                    </p><br>
+                    <a href="https://www.116117.fi/en/Index">more about the Medical Helpline</a>
+                </li>
+                <li>
+                    <h3>OR, use the Omaolo service</h3>
+                    <p>When you use <a href="https://www.omaolo.fi/">the Omaolo symptom checker</a>, you will receive an
+                        assessment of your care needs and
+                        instructions. After logging in, you can send your symptom assessment to a health care
+                        professional via the service if necessary. We will contact you within two hours by phone or
+                        Omaolo message.
+                    </p>
+                </li>
+            </ul>
+        </article>
+
+        <article class="large-card">
+            <h2>Outpatient</h2>
+            <p>Go to your own clinic.</p>
+        </article>
+        <article class="large-card">
+            <h2>If you are a student</h2>
+            <p>FSHS is always your first choice for non-urgent situations.</p>
+            <a href="https://www.yths.fi/en/frontpage/">jump to FSHS</a>
+        </article>
+    </main>
+
+    <section id="call-to-action">
+        <h2>🤔🤔🤔<br>Do you still have questions? Is there a typo?</h2>
+        <p>Please contact us without hesitation. We welcome your questions and reports.</p>
+        <a class="button" href="../contact/index_en.html">Contact us</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Newcomer Finland Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

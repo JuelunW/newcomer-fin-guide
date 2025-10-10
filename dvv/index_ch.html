@@ -29,7 +29,11 @@
             </ul>
         </nav>
         <section class="dropdown">
-            <img class="burger-icon" src="../assets/burger-menu-svgrepo-com.svg" alt="burger icon" />
+            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
+                <rect x="10" y="12" width="20" height="2" fill="gray" />
+                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
+                <rect x="17" y="23" width="13" height="2" fill="gray" />
+            </svg>
             <ul class="dropdown-menu">
                 <li><a href="../home/index_ch.html">主页</a></li>
                 <li><a href="../flow/index_ch.html">流程图</a></li>
@@ -69,18 +73,12 @@
         </article>
         <section class="large-card padding-48px-10pc">
 
-            <div class="carousel-container">
-                <div class="carousel-slides">
-                    <iframe src="../assets/IHH_building1.png" title="Image of a DVV service point"
-                        style="width:100%;border:none;"></iframe>
-                    <iframe src="../assets/IHH_building2.png" title="Image of a different DVV service point"
-                        style="width:100%;border:none;"></iframe>
-                    <iframe src="../assets/IHH_2D.png" title="Another image of a DVV service point"
-                        style="width:100%;border:none;"></iframe>
-                </div>
-                <button class="carousel-button prev-button">&#10094;</button>
-                <button class="carousel-button next-button">&#10095;</button>
-            </div>
+            <picture>
+                <source media="(min-width: 1300px)" srcset="../assets/images/IHH-large.jpg">
+                <source media="(min-width: 650px)" srcset="../assets/images/IHH_building1.png">
+                <source media="(min-width: 465px)" srcset="../assets/images/IHH_building2.png">
+                <img src="../assets/images/IHH_2D.png">
+            </picture>
         </section>
         <article class="large-card margin-60px-12pc padding-48px-10pc">
             <h2>如何注册，申请</h2>

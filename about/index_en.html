@@ -29,7 +29,11 @@
             </ul>
         </nav>
         <section class="dropdown">
-            <img class="burger-icon" src="../assets/burger-menu-svgrepo-com.svg" alt="burger icon" />
+            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
+                <rect x="10" y="12" width="20" height="2" fill="gray" />
+                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
+                <rect x="17" y="23" width="13" height="2" fill="gray" />
+            </svg>
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
@@ -60,10 +64,12 @@
                     That's why I created this website to share my experience and knowledge with other newcomers.
                 </p>
             </section>
-            <!--<p>If you find this website helpful, I'd really appreciate it if you could give me a <a
-                    href="">thumbs up</a>
+            <!--
+            <p>If you find this website helpful, I'd really appreciate it if you could give me a
+                <a onclick="thanks()">thumbs up</a>
                 and leave a <a href="../contact/index_en.html">comment here</a>!
-            </p>-->
+            </p>
+            -->
         </article>
         <article class="large-card">
             <h2>About This Website</h2>
@@ -72,14 +78,22 @@
                 informational purposes only and may not be accurate or up-to-date. Please verify any information with
                 official sources before taking any action.
             </p>
-            <img src="../assets/Newcomer Finland Guide.png" alt="the structer of this website" />
-            <p>If you find this website helpful, I'd really appreciate it if you could give me a <a href="">thumbs
+            <img src="../assets/images/Newcomer Finland Guide.png" alt="the structer of this website" />
+            <p>If you find this website helpful, I'd really appreciate it if you could give me a <a
+                    onclick="thanks()">thumbs
                     up</a>
                 and leave a <a href="../contact/index_en.html">comment here</a>!
             </p>
             <p>If you have any questions or suggestions, please feel free to <a href="../contact/index_en.html">contact
                     me</a>.
             </p>
+        </article>
+        <article class="large-card">
+            <video width="100%" controls autoplay muted>
+                <source media="(min-width: 650px)"  src="../assets/videos/video-large.mp4" type="video/mp4">
+                <source src="../assets/videos/video-small.mp4" type="video/mp4">
+                Sorry, videos are not supported by this browser.
+            </video>
         </article>
     </main>
     <section id="call-to-action">
