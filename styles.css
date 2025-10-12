@@ -51,6 +51,7 @@ h4 {
 
 p {
     color: var(--secondary-color);
+    margin-bottom: 10px;
 }
 
 header {
@@ -259,7 +260,7 @@ iframe + nav > a {
     counter-increment: step;
     position: absolute;
     left: 0;
-    top: 30px;
+    top: 25px;
     font-size: 2rem;
     font-weight: bold;
     color: white;
@@ -269,6 +270,27 @@ iframe + nav > a {
     line-height: clamp(32px, 6vw, 42px);
     text-align: center;
     border-radius: 50%;
+}
+
+.step-title {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step-title:hover {
+    background-color: rgba(43, 127, 255, 0.05);
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.step-detail {
+    display: none;
+}
+
+.show-detail {
+    display: inherit;
 }
 
 .font-4a5565 {
@@ -341,8 +363,6 @@ iframe + nav > a {
 strong {
     color: var(--primary-color);
 }
-
-
 
 table {
     border-bottom: solid 1px var(--secondary-color);

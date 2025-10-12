@@ -10,3 +10,9 @@ function toggleColorTheme() {
     var elem = document.body;
     elem.classList.toggle("darkmode");
 }
+
+function show(id) {
+    var elem = document.getElementById(id);
+    var target = elem.getElementsByClassName("step-detail")[0];
+    target.classList.toggle("show-detail");
+}
