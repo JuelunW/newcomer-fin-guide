@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logolike" href="../home/index_en.html">Newcomer Finland Guide</a>
+        <nav>
+            <ul>
+                <li><a style="padding-left: 0px;" href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
+            <ul class="dropdown-menu">
+                <li><a href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
+            alt="color theme toggle" onclick="toggleColorTheme()">
+    </header>
+    <main>
+        <article class="title-card">
+            <h1>Electricity Service</h1>
+            <aside class="aside-right">
+                <img style="width: 80px; height: auto; display: inline;" src="../assets/images/socket-F.webp"
+                    alt="Socket type F">
+                <img style="width: 60px; height: auto; display: inline;" src="../assets/images/plug-F.png"
+                    alt="Plug type F">
+            </aside>
+            <p>Voltage: 230 V<br>Frequency: 50 Hz<br>Plug type: type F and type C</p>
+            <p>The standard voltage and frequency in Finland is consistent with the European standard.</p>
+        </article>
+
+        <article class="large-card">
+            <h2>Electricity Contract</h2>
+            <p>
+                Electricity contract commonly refers to the contract for electricity consumption. You can choose an
+                electricity provider based on your preference.
+            </p>
+            <ul class="option-list">
+                <h3>There are two types contracts, you should be aware of. </h3>
+                <li>
+                    <h3>Fixed-price contract</h3>
+                    <p>
+                        All fixed-price contract go with fixed-term. It means you cannot change your decision during a
+                        contract. The typical term is one year, with pricing decreasing as the term length increases.
+                    </p>
+                </li>
+                <li>
+                    <h3>Spot price contract</h3>
+                    <p>
+                        A continuous electricity contract that is tied to the market price with a margin. You can cancel
+                        this contract at anytime.
+                    </p>
+                </li>
+                <p>* Both consist of a basic service fee beside energy consumption fee. </p>
+            </ul>
+
+            <br><br>
+            <h2>The line chart of electricity spot price</h2>
+            <figure>
+                <img src="../assets/images/spot-price.png" alt="spot price line chart">
+                <figcaption>source: Statistics Finland, https://stat.fi/en/statistics/ehi#graphs</figcaption>
+            </figure>
+        </article>
+
+        <article class="large-card">
+            <h2>Electricity network contract</h2>
+            <p>
+                It is also called distribution contract. You do not need to choose a network provider, because it is
+                fixed based on your location. When you sign a consumption contract, you will make a network contract
+                automatically. The network provider is responsible for maintaining the power lines and delivering
+                electricity to your home.
+            </p>
+            <h2>How they charge you</h2>
+            <p>
+                Similar with consumption contract, the network bill is usually composed of a basic fee and an energy
+                fee. The basic fee is a fixed monthly charge, while the energy fee is based on your electricity
+                consumption (kWh). Some network providers may also charge additional fees for services such as meter
+                reading or maintenance.
+            </p>
+            <p>
+                Here is an example,
+                <a href="https://www.helensahkoverkko.fi/en/customer-support/customer-service/distribution-prices">
+                    Helen electricity network
+                </a>
+                for Helsinki area.
+            </p>
+        </article>
+
+        <article class="topics">
+            <h2>You may also interseted in</h2>
+            <section class="small-card-container">
+                <a class="small-card" href="../transport/index_en.html">
+                    <h3>Public Transport</h3>
+                    <p>Finland public transport system is managed by a combination of regional and national operators.
+                    </p>
+                </a>
+                <a class="small-card" href="../grocery/index_en.html">
+                    <h3>Grocery stores</h3>
+                    <p>Grocery shopping in Finland is dominated by a few major players. Some operate several different
+                        types of stores.
+                    </p>
+                </a>
+                <a class="small-card" href="../medical/index_en.html">
+                    <h3>Medical help</h3>
+                    <p>Emergency call: <strong>112</strong>, for emergency situations.</p>
+                    <p>Medical helpline: <strong>116117</strong>, for urgent health matters.</p>
+                    <p>Poison Information Centre: <strong>+358 800 147 111</strong>, for preventing and treating sudden
+                        poisoning.</p>
+                </a>
+                <a class="small-card" href="../post/index_en.html">
+                    <h3>Postal Service</h3>
+                    <p>Recive, send or return parcels or letters.</p>
+                    <p>
+                        There are many postal service provider in Finland, such as Posti, PostNord, Pakettipiste, and
+                        Matkahuolto.
+                    </p>
+                </a>
+            </section>
+        </article>
+    </main>
+
+    <section id="call-to-action">
+        <h2>🤔🤔🤔<br>Do you still have questions? Is there a typo?</h2>
+        <p>Please contact us without hesitation. We are welcome for your questions and reports.</p>
+        <a class="button" href="../contact/index_en.html">Contact us</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Newcomer Finland Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
