@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Newcomer Finland Guide</title>
-<link rel="stylesheet" href="../styles.css">
-<script src="../script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
 </head>
 
 <body>
@@ -21,19 +22,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
         </nav>
-        <section class="dropdown">
-            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
-                <rect x="10" y="12" width="20" height="2" fill="gray" />
-                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
-                <rect x="17" y="23" width="13" height="2" fill="gray" />
-            </svg>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
@@ -42,61 +39,64 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
-        </section>
+        </div>
         <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
-            onclick="toggleColorTheme()">
+            alt="color theme toggle" onclick="toggleColorTheme()">
     </header>
     <main>
+        <div style="position: fixed; top: 100px; right: 10px;">
+            <audio controls>
+                <source src="../assets/floatinggarden.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
         <article class="title-card">
-            <section>
-                <aside class="aside-left">
-                    <img class="my-avatar"
-                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9a0c3965-fb92-4891-b273-8806038cde06/dcmnrut-2e2c0a2d-67de-4899-8fa3-7ed968777223.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzlhMGMzOTY1LWZiOTItNDg5MS1iMjczLTg4MDYwMzhjZGUwNlwvZGNtbnJ1dC0yZTJjMGEyZC02N2RlLTQ4OTktOGZhMy03ZWQ5Njg3NzcyMjMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aQeJavspaR_dLQ2Tvgzp9rBZokvQb88C6FjVNauUvK8"
-                        alt="my avatar" />
-                </aside>
-                <h1>Hi there</h1>
-                <p>This website is created by me. I moved to Finland in 2025 and have been living here since then. I
-                    know how confusing and overwhelming it can be to navigate the official processes and requirements.
-                    That's why I created this website to share my experience and knowledge with other newcomers.
-                </p>
-            </section>
-            <!--
-            <p>If you find this website helpful, I'd really appreciate it if you could give me a
-                <a onclick="thanks()">thumbs up</a>
-                and leave a <a href="../contact/index_en.html">comment here</a>!
+            <aside class="aside-left">
+                <img class="my-avatar"
+                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9a0c3965-fb92-4891-b273-8806038cde06/dcmnrut-2e2c0a2d-67de-4899-8fa3-7ed968777223.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzlhMGMzOTY1LWZiOTItNDg5MS1iMjczLTg4MDYwMzhjZGUwNlwvZGNtbnJ1dC0yZTJjMGEyZC02N2RlLTQ4OTktOGZhMy03ZWQ5Njg3NzcyMjMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aQeJavspaR_dLQ2Tvgzp9rBZokvQb88C6FjVNauUvK8"
+                    alt="my avatar">
+            </aside>
+            <h1>Hi there</h1>
+            <p>
+                This website is created by me. I moved to Finland in 2025 and have been living here since then. I
+                know how confusing and overwhelming it can be to navigate the official processes and
+                requirements.
+                That's why I created this website to share my experience and knowledge with other newcomers.
             </p>
-            -->
         </article>
         <article class="large-card">
             <h2>About This Website</h2>
-            <p>All the information provided on this website is based on my personal experience and research. I am not
-                affiliated with any government agency or organization. The information on this website is for general
-                informational purposes only and may not be accurate or up-to-date. Please verify any information with
-                official sources before taking any action.
+            <p>
+                All the information provided on this website is based on my personal experience and research. I am
+                not affiliated with any government agency or organization. The information on this website is for
+                general informational purposes only and may not be accurate or up-to-date. Please verify any information
+                with official sources before taking any action.
             </p>
-            <img src="../assets/images/Newcomer Finland Guide.png" alt="the structer of this website" />
-            <p>If you find this website helpful, I'd really appreciate it if you could give me a <a
+            <img src="../assets/images/web-content-guide.png" alt="the structer of this website">
+            <p>
+                If you find this website helpful, I'd really appreciate it if you could give me a <a
                     onclick="thanks()">thumbs
                     up</a>
                 and leave a <a href="../contact/index_en.html">comment here</a>!
             </p>
-            <p>If you have any questions or suggestions, please feel free to <a href="../contact/index_en.html">contact
-                    me</a>.
+            <p>
+                If you have any questions or suggestions, please feel free to
+                <a href="../contact/index_en.html">contact me</a>.
             </p>
         </article>
-        <article class="large-card">
-            <video width="100%" controls autoplay muted>
-                <source media="(min-width: 650px)"  src="../assets/videos/video-large.mp4" type="video/mp4">
+        <div class="large-card">
+            <video style="width: 100%;" controls autoplay muted>
+                <source src="../assets/videos/video-large.mp4" type="video/mp4">
                 <source src="../assets/videos/video-small.mp4" type="video/mp4">
                 Sorry, videos are not supported by this browser.
             </video>
-        </article>
+        </div>
     </main>
     <section id="call-to-action">
         <h2>Ready to Get Started?</h2>
@@ -105,6 +105,7 @@
     </section>
     <footer>
         <p>&copy; 2025 Newcomer Finland Guide. All rights reserved.</p>
+        <p>Music I use: Bensound<br>License code: Q7VUWRWCZKGDYWWY<br>Artist: : Aventure</p>
     </footer>
 </body>
 

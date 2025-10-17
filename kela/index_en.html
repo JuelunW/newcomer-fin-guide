@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
     <link rel="stylesheet" href="../styles.css">
     <script src="../script.js"></script>
 </head>
@@ -21,19 +22,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
         </nav>
-        <section class="dropdown">
-            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
-                <rect x="10" y="12" width="20" height="2" fill="gray" />
-                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
-                <rect x="17" y="23" width="13" height="2" fill="gray" />
-            </svg>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html#kela">Step-by-step Guides</a></li>
@@ -42,15 +39,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
-        </section>
+        </div>
         <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
-            onclick="toggleColorTheme()">
+            alt="color theme toggle" onclick="toggleColorTheme()">
     </header>
     <main>
         <article class="title-card">
@@ -103,7 +100,7 @@
                             src="https://www.openstreetmap.org/export/embed.html?bbox=24.959722459316254%2C60.1822627969732%2C24.962246417999268%2C60.18316703889498&amp;layer=mapnik&amp;marker=60.182714921046696%2C24.96098443865776"
                             style="border: 1px solid black">
                         </iframe>
-                        <br />
+                        <br>
                         <small>
                             <a
                                 href="https://www.openstreetmap.org/?mlat=60.182715&amp;mlon=24.960984#map=19/60.182715/24.960984">

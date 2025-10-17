@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芬兰新人指南</title>
+    <link rel="icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logolike" href="../home/index_zh.html">芬兰新人指南</a>
+        <nav>
+            <ul>
+                <li><a style="padding-left: 0px;" href="../home/index_zh.html">主页</a></li>
+                <li><a href="../flow/index_zh.html">流程图</a></li>
+                <li><a href="../contact/index_zh.html">联系方式</a></li>
+                <li><a href="../about/index_zh.html">关于我们</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="zh">中文</option>
+                        <option value="en">English</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
+            <ul class="dropdown-menu">
+                <li><a href="../home/index_zh.html">主页</a></li>
+                <li><a href="../flow/index_zh.html">流程图</a></li>
+                <li><a href="../contact/index_zh.html">联系方式</a></li>
+                <li><a href="../about/index_zh.html">关于我们</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="zh">中文</option>
+                        <option value="en">English</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
+            alt="color theme toggle" onclick="toggleColorTheme()">
+    </header>
+    <main>
+        <article class="title-card margin-60px-12pc padding-48px-10pc">
+            <h1>Digi- ja väestötietovirasto (DVV)</h1>
+            <p>对于任何永久或临时移居芬兰的人来说，在DVV注册都是至关重要的第一步。本指南将指导您完成个人身份代码的注册流程，并注册居住地。</p>
+            <a class="button" href="https://dvv.fi/en/as-a-foreigner-in-finland">DVV offical website</a>
+        </article>
+        <article class="large-card margin-60px-12pc padding-48px-10pc">
+            <h2>什么是DVV?</h2>
+            <p>
+                数字和人口数据管理局(DVV)是芬兰政府机构，负责维护人口信息系统。该系统包含所有芬兰居民的数据，包括已登记居住地的外国人。
+                在DVV注册是获取公共服务、开设银行账户和处理芬兰官方事务的基本步骤。
+            </p>
+            <h2>什么是个人身份代码?</h2>
+            <p>
+                个人身份代码（也称为社保号）是一个独特的标识符，分配给每个在芬兰注册的人。它用于识别个人并访问各种服务，如医疗保健、税务和社会保障。
+                个人身份代码通常由11个字符组成，包括出生日期、一个字母和一个校验数字。例如：131052-308T。如果您尚未从Migri或Vero收到个人身份代码，
+                您可以向数字和人口数据管理局（DVV）申请。
+            </p>
+            <h2>居住地行政区是什么？</h2>
+            <p>
+                居住地行政区是指您在芬兰实际居住的城市或市镇。收到个人身份代码后，您不会自动注册为某个地区的居民。您可以向DVV注册芬兰的居住地。拥有芬兰居住地，
+                您可以以较低的成本享受当地公共服务，例如日托、学校、医疗保健以及公共交通。如果您想获得芬兰身份证或驾驶执照，也需要拥有居住地。
+            </p>
+        </article>
+        <div class="large-card padding-48px-10pc">
+            <picture>
+                <source media="(min-width: 1300px)" srcset="../assets/images/IHH-large.jpg">
+                <source media="(min-width: 650px)" srcset="../assets/images/IHH_building1.png">
+                <source media="(min-width: 465px)" srcset="../assets/images/IHH_building2.png">
+                <img src="../assets/images/IHH_2D.png" alt="IHH building">
+            </picture>
+        </div>
+        <article class="large-card margin-60px-12pc padding-48px-10pc">
+            <h2>如何注册，申请</h2>
+            <ol class="step-list">
+                <li>
+                    <h3>填写在线表格</h3>
+                    <ul class="option-list">
+                        <li>
+                            <h4>如果你<span style="text-decoration: underline;">没有</span>芬兰社保号，你可以填写下方表格
+                                同时申请社保号和注册地址。
+                            </h4>
+                            <a class="font-ff7f5d hover-2b7fff"
+                                href="https://lomakkeet.dvv.fi/lomakkeet/wuY0J/lomake.html?rinnakkaislomake=en">
+                                🔗 申请社保号并注册地址
+                            </a>
+                            <div>
+                                <p>你可能需要的材料：</p>
+                                <ul>
+                                    <li>护照或欧盟成员国/冰岛/挪威/列支敦士登/瑞士或圣马力诺的身份证</li>
+                                    <li>芬兰居留卡</li>
+                                    <li>学习证明或劳务合同</li>
+                                    <li>芬兰或国外地址</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>
+                                如果你<span style="text-decoration: underline;">已经有</span>芬兰社保号，想注册地址，需要填写下方表格：
+                            </h4>
+                            <a class="font-ff7f5d hover-2b7fff"
+                                href="https://lomakkeet.dvv.fi/lomakkeet/6889/lomake.html?rinnakkaislomake=en">
+                                🔗 注册地址
+                            </a>
+                            <div>
+                                <p>你需要:</p>
+                                <ul>
+                                    <li>芬兰地址</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>预约拜访</h3>
+                    <p class="font-4a5565 line-height-1-6">提交表格后，你需要亲自去一趟DVV的服务地址，拜访需要提前预约。</p>
+                    <a class="font-ff7f5d hover-2b7fff" href="https://secure.vihta.com/public-ng/dvv/#/reservation">
+                        🔗 预约入口</a>
+                </li>
+                <li>
+                    <h3>拜访</h3>
+                    <p class="font-4a5565 line-height-1-6">在DVV服务点，工作人员将审核您的文件并处理您的申请。他们会立即将您的信息登记到人口信息系统中。<br>
+                        <br>如果你申请了社保号，你将于次日通过电子邮件收到一份包含你个人身份代码的文件。
+                    </p>
+                </li>
+            </ol>
+        </article>
+        <article class="large-card margin-60px-12pc padding-48px-10pc">
+            <h2>接下来做什么</h2>
+            <ul>
+                <li><a class="font-ff7f5d hover-2b7fff" href="../flow/index_zh.html">完整流程</a>
+                </li>
+                <li><a class="font-4a5565 hover-2b7fff" href="../kela/index_zh.html">申请社会保障卡（Kela card）</a></li>
+                <li><a class="font-4a5565 hover-2b7fff" href="../id/index_zh.html"> 申请芬兰身份证（Finnish ID card）</a>
+                </li>
+                <li><a class="font-4a5565 hover-2b7fff" href="../bank/index_zh.html">开立银行账户</a></li>
+            </ul>
+        </article>
+
+        <article class="topics">
+            <h2>其他</h2>
+            <section class="small-card-container">
+                <a class="small-card" href="../grocery/index_zh.html">
+                    <h3>超市</h3>
+                    <p>芬兰超市主要由几家大型连锁集团主导，部分集团旗下拥有不同类型的超市。</p>
+                </a>
+                <a class="small-card" href="../transport/index_zh.html">
+                    <h3>公共交通</h3>
+                    <p>芬兰的公共交通系统主要分为短途和长途两种，包括巴士，有轨电车，地铁，和火车。车票价格按里程计算，在其有效时间内可反复乘坐，且不区分交通工具。</p>
+                </a>
+                <a class="small-card" href="../driver/index_zh.html">
+                    <h3>驾照</h3>
+                    <p>中国香港驾照可以免试换芬兰驾照，中国大陆、澳门、台湾驾照不可以。
+                    </p>
+                </a>
+                <a class="small-card" href="../medical/index_zh.html">
+                    <h3>医疗</h3>
+                    <p>急救电话: <strong>112</strong></p>
+                    <p>医疗热线: <strong>116117</strong> 紧急情况下拨打。</p>
+                    <p>食物中毒: <strong>+358 800 147 111</strong></p>
+                </a>
+            </section>
+        </article>
+    </main>
+
+    <section id="call-to-action">
+        <h2>🤔🤔🤔<br>仍有疑问吗？我们有那里打错了？</h2>
+        <p>请不要犹豫，联系我们。我们会很高兴收到你的意见和反馈。</p>
+        <a class="button" href="../contact/index_zh.html">联系我们</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Newcomer Finland Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

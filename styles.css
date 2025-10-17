@@ -592,15 +592,14 @@ p.progress-label {
     background-color: var(--primary-color);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
 
-    animation: fillProgress 2s ease-out forwards;
+    animation: fillProgress 4s ease-in-out forwards;
 }
 
 @keyframes fillProgress {
-    from {
+    0%{
         width: 0%;
     }
-
-    to {
+    100% {
         width: 75%;
     }
 }
@@ -668,7 +667,6 @@ p.progress-label {
 }
 
 .message-success {
-    margin-top: 1 rem;
     color: #16a34a;
     font-weight: 500;
     display: none;

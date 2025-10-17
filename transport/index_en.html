@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
     <link rel="stylesheet" href="../styles.css">
     <script src="../script.js"></script>
 </head>
@@ -21,19 +22,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
         </nav>
-        <section class="dropdown">
-            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
-                <rect x="10" y="12" width="20" height="2" fill="gray" />
-                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
-                <rect x="17" y="23" width="13" height="2" fill="gray" />
-            </svg>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html#transport">Step-by-step Guides</a></li>
@@ -42,15 +39,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
-        </section>
+        </div>
         <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
-            onclick="toggleColorTheme()">
+            alt="color theme toggle" onclick="toggleColorTheme()">
     </header>
     <main>
         <article class="title-card">
@@ -61,16 +58,16 @@
                 service points.
             </p>
         </article>
-        <section class="large-card">
+        <div class="large-card">
             <iframe src="../assets/images/p1.jpg" name="gallery" title="Image of Finland public transport"></iframe>
             <nav>
-                <a href="../assets/images/p1.jpg" target="gallery"><img src="../assets/images/p1-1.jpg"></a>
-                <a href="../assets/images/p2.jpg" target="gallery"><img src="../assets/images/p2-1.jpg"></a>
-                <a href="../assets/images/p3.jpg" target="gallery"><img src="../assets/images/p3-1.jpg"></a>
-                <a href="../assets/images/p4.jpg" target="gallery"><img src="../assets/images/p4-1.jpg"></a>
-                <a href="../assets/images/p5.jpg" target="gallery"><img src="../assets/images/p5-1.jpg"></a>
+                <a href="../assets/images/p1.jpg" target="gallery"><img src="../assets/images/p1-1.jpg" alt="tram"></a>
+                <a href="../assets/images/p2.jpg" target="gallery"><img src="../assets/images/p2-1.jpg" alt="bus"></a>
+                <a href="../assets/images/p3.jpg" target="gallery"><img src="../assets/images/p3-1.jpg" alt="bus"></a>
+                <a href="../assets/images/p4.jpg" target="gallery"><img src="../assets/images/p4-1.jpg" alt="train"></a>
+                <a href="../assets/images/p5.jpg" target="gallery"><img src="../assets/images/p5-1.jpg" alt="metro"></a>
             </nav>
-        </section>
+        </div>
         <article class="large-card">
             <h2>How are ticket prices calculated?</h2>
             <p>
@@ -89,42 +86,42 @@
                 Take HSL as an example. This color-coding is used on maps, at stops, and on the vehicles themselves to
                 help passengers quickly identify the different types of transport and their routes.
             </p>
-            <section style="text-align: center; margin-bottom: 64px;">
+            <div style="text-align: center; margin-bottom: 64px;">
                 <p style="display: inline-block;">
-                    <img class="small-logo" src="../assets/images/bus-rectangle.svg" alt="Blue for Bus icon" />
+                    <img class="small-logo" src="../assets/images/bus-rectangle.svg" alt="Blue for Bus icon">
                     Bus,
                 </p>
                 <p style="display: inline-block;">
-                    <img class="small-logo" src="../assets/images/tram-rectangle.svg" alt="Green for Tram icon" />
+                    <img class="small-logo" src="../assets/images/tram-rectangle.svg" alt="Green for Tram icon">
                     Tram,
                 </p>
                 <p style="display: inline-block;">
-                    <img class="small-logo" src="../assets/images/light-rail.svg" alt="Turquoise for Light rail icon" />
+                    <img class="small-logo" src="../assets/images/light-rail.svg" alt="Turquoise for Light rail icon">
                     Light Rail,
                 </p>
                 <p style="display: inline-block;">
-                    <img class="small-logo" src="../assets/images/metro-rectangle.svg" alt="Orange for Metro icon" />
+                    <img class="small-logo" src="../assets/images/metro-rectangle.svg" alt="Orange for Metro icon">
                     Metro,
                 </p>
                 <p style="display: inline-block;">
-                    <img class="small-logo" src="../assets/images/train-rectangle.svg" alt="Purple for train icon" />
+                    <img class="small-logo" src="../assets/images/train-rectangle.svg" alt="Purple for train icon">
                     Train,
                 </p>
                 <p style="display: inline-block;">
                     <img class="small-logo" src="../assets/images/ferry-rectangle.svg"
-                        alt="Light blue for Ferry icon" />
+                        alt="Light blue for Ferry icon">
                     Ferry
                 </p>
-            </section>
+            </div>
             <h2>City Bike</h2>
             <p>
                 Take Helsinki as an example. The bike system in Helsinki and Espoo is different from the system used in
                 Vantaa, and bikes from the two different systems cannot be used interchangeably.
             </p>
-            <section style="text-align: center; margin-bottom: 64px;">
+            <div style="text-align: center; margin-bottom: 64px;">
                 <img style="width: clamp(200px, 50%, 500px);" src="../assets/images/2021-03-16-city-bikes-wide.jpg"
-                    alt="City bike" />
-            </section>
+                    alt="City bike">
+            </div>
             <h2>E-scooter</h2>
             <p>
                 E-scooters are operated by private companies. You usually need to download their own app to use it. In
@@ -133,7 +130,7 @@
             <h2 id="vr">VR</h2>
             <aside class="aside-left">
                 <img style="width: 35px; margin: 8px 8px 8px 0; border-radius: 8px;" src="../assets/images/VR-logo.webp"
-                    alt="VR icon" />
+                    alt="VR icon">
             </aside>
             <p>
                 VR is the main train operator in Finland. It provides long-distance transport. You can check the
@@ -141,15 +138,15 @@
                 conscripts and persons undergoing non-military service get a discount on train tickets. Groups with more
                 than 18 persons can ask for a discount from our Group Sales.
             </p>
-            <section style="text-align: center; margin: 32px 0;">
+            <div style="text-align: center; margin: 32px 0;">
                 <a href="#full-screen-modal">
                     <img style="width: clamp(200px, 50%, 500px); border-radius: 8px;" src="../assets/images/VR-map.png"
-                        alt="VR map" />
+                        alt="VR map">
                 </a>
-            </section>
+            </div>
         </article>
         <a id="full-screen-modal" href="#vr">
-            <img src="../assets/images/VR-map.png" />
+            <img src="../assets/images/VR-map.png" alt="VR map">
         </a>
         <article class="large-card">
             <h2>Where to buy</h2>

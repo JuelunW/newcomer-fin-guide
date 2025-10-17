@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
     <link rel="stylesheet" href="../styles.css">
     <script src="../script.js"></script>
 </head>
@@ -21,15 +22,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
         </nav>
-        <section class="dropdown">
-            <img class="burger-icon" src="../assets/images/burger-menu-svgrepo-com.svg" alt="burger icon" />
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
@@ -38,38 +39,34 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
-        </section>
+        </div>
     </header>
 
     <article class="large-card" style="text-align: center;">
         <!-- Icon - A simple SVG wrench for construction -->
-        <section class="icon-container">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                </path>
-            </svg>
-        </section>
+        <div class="icon-container">
+            <img src="../assets/images/editing.svg" alt="Under Construction Icon" style="width:80%; height: auto; margin: 0;">
+        </div>
         <h1 style="color: #1f2937; margin: 24px auto">Page Under Construction 🚧</h1>
         <p>
             We're busy polishing the final features to bring you a fantastic new experience. This page is building
             and will be live very soon!
         </p>
 
-        <section class="progress-container">
+        <div class="progress-container">
             <p class="progress-label">Progress: 75% Complete</p>
-            <section class="progress-bar">
-                <section class="progress-bar-fill"></section>
-            </section>
-        </section>
+            <div class="progress-bar">
+                <div class="progress-bar-fill"></div>
+            </div>
+        </div>
 
-        <section class="cta-box">
+        <div class="cta-box">
             <p>Want to be notified when we launch?</p>
             <form onsubmit="event.preventDefault(); showThankYou();" class="form-flex">
                 <input type="email" id="emailInput" placeholder="Enter your email address" required class="form-input">
@@ -78,7 +75,7 @@
                 </button>
             </form>
             <p id="thankYouMessage" class="message-success">Thank you! We'll be in touch soon.</p>
-        </section>
+        </div>
     </article>
 
     <script>

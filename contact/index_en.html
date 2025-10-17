@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Newcomer Finland Guide</title>
-<link rel="stylesheet" href="../styles.css">
-<script src="../script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
 </head>
 
 <body>
@@ -21,19 +22,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
         </nav>
-        <section class="dropdown">
-            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
-                <rect x="10" y="12" width="20" height="2" fill="gray" />
-                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
-                <rect x="17" y="23" width="13" height="2" fill="gray" />
-            </svg>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
@@ -42,15 +39,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
-        </section>
+        </div>
         <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
-            onclick="toggleColorTheme()">
+            alt="color theme toggle" onclick="toggleColorTheme()">
     </header>
     <main>
         <form class="large-card">
@@ -59,27 +56,26 @@
             <input type="text" id="name" name="name" placeholder="How to call you" required><br><br>
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" placeholder="email@example.com"><br><br>
-            <section>
-                <label for="type">What is this message for?</label><br><br>
-                <section>
-                    <input type="radio" id="type" name="type" value="question">
+            <div>
+                <label>What is this message for?</label><br><br>
+                <div>
+                    <input type="radio" id="question" name="type" value="question">
                     <label for="question">Question</label>
-                </section>
-                <section>
-                    <input type="radio" id="type" name="type" value="feedback">
+                </div>
+                <div>
+                    <input type="radio" id="feedback" name="type" value="feedback">
                     <label for="feedback">Feedback</label>
-                </section>
-                <section>
-                    <input type="radio" id="type" name="type" value="love">
+                </div>
+                <div>
+                    <input type="radio" id="love" name="type" value="love">
                     <label for="love">I love this site!</label>
-                </section>
+                </div>
                 <br><br>
-            </section>
+            </div>
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" placeholder="leave your message here"
                 required></textarea><br><br>
             <input class="button" type="submit" value="Submit">
-        </form>
         </form>
     </main>
     <section id="call-to-action">

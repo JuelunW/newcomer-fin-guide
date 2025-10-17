@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Newcomer Finland Guide</title>
-<link rel="stylesheet" href="../styles.css">
-<script src="../script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
 </head>
 
 <body>
@@ -21,19 +22,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
         </nav>
-        <section class="dropdown">
-            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
-                <rect x="10" y="12" width="20" height="2" fill="gray" />
-                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
-                <rect x="17" y="23" width="13" height="2" fill="gray" />
-            </svg>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
@@ -42,20 +39,21 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
-        </section>
+        </div>
         <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
-            onclick="toggleColorTheme()">
+            alt="color theme toggle" onclick="toggleColorTheme()">
     </header>
     <main>
         <article class="title-card">
             <h1>Alright 😎 Let's start</h1>
-            <p>Navigating the official processes can be confusing. We provide clear, step-by-step guides to help you
+            <p>
+                Navigating the official processes can be confusing. We provide clear, step-by-step guides to help you
                 settle in with ease.
             </p>
         </article>
@@ -99,9 +97,7 @@
                         🔗 Book an appointment here
                     </a>
                     <br><br>
-                    <section>
-                        <a href="../dvv/index_en.html">see more about this step</a>
-                    </section>
+                    <a href="../dvv/index_en.html">see more about this step</a>
                 </section>
             </li>
             <li id="mobile">
@@ -133,9 +129,7 @@
                             <p>You can buy it at the carrier's own store</p>
                         </li>
                     </ul>
-                    <section>
-                        <a href="../mobile/index_en.html">see more about this step</a>
-                    </section>
+                    <a href="../mobile/index_en.html">see more about this step</a>
                 </section>
             </li>
             <li id="kela">
@@ -174,9 +168,7 @@
                             <a href="https://www.kela.fi/omakela">🔗 the OmaKela e-service</a>
                         </li>
                     </ul>
-                    <section>
-                        <a href="../kela/index_en.html">see more about this step</a>
-                    </section>
+                    <a href="../kela/index_en.html">see more about this step</a>
                 </section>
             </li>
             <li id="id">
@@ -207,9 +199,7 @@
                             <p>💸 Costs €61</p>
                         </li>
                     </ul>
-                    <section>
-                        <a href="../id/index_en.html">see more about this step</a>
-                    </section>
+                    <a href="../id/index_en.html">see more about this step</a>
                 </section>
             </li>
             <li id="bank">
@@ -221,7 +211,7 @@
                     <p>Making an appointment then attend.</p>
                     <p>Asking about service fees.</p>
                     <h4 class="line-height-1-6 padding-8px-0">Nordea Bank:
-                        <a href="tel:+358 200 70 000">tel: 0200 70 000</a>, or
+                        <a href="tel:+35820070000">tel: 0200 70 000</a>, or
                         <a
                             href="https://www.nordea.fi/en/personal/your-life/life-situations/studies/#tab=Don-t-bank-with-us-yet-">
                             🔗 contact us
@@ -234,17 +224,15 @@
                         </a>, then meeting at the bank branch
                     </h4>
                     <h4 class="line-height-1-6 padding-8px-0">Danske Bank:
-                        <a href="tel:+358 0100 1580">tel: +358 0100 1580</a> or
-                        <a href="tel:+358 0200 2590">tel: +358 0200 2590</a>
+                        <a href="tel:+35801001580">tel: +358 0100 1580</a> or
+                        <a href="tel:+35802002590">tel: +358 0200 2590</a>
                     </h4>
                     <h4 class="line-height-1-6 padding-8px-0">S-Bank:
                         <a href="https://www.s-pankki.fi/fi/ajanvaraus/">
                             🔗 book an appointment
                         </a>
                     </h4>
-                    <section>
-                        <a href="../bank/index_en.html">see more about this step</a>
-                    </section>
+                    <a href="../bank/index_en.html">see more about this step</a>
                 </section>
             </li>
             <li id="transport">
@@ -252,13 +240,11 @@
                     <h3>Public transportation card</h3>
                     <h3>&or;</h3>
                 </section>
-                <section class="step-detail">
+                <div class="step-detail">
                     <p>Please goolge: "your ciry" transportation.</p>
                     <p>Student may have discount.</p><br>
-                    <section>
-                        <a href="../transport/index_en.html">see more about this step</a>
-                    </section>
-                </section>
+                    <a href="../transport/index_en.html">see more about this step</a>
+                </div>
             </li>
         </ol>
     </article>

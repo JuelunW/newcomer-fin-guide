@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
     <link rel="stylesheet" href="../styles.css">
     <script src="../script.js"></script>
 </head>
@@ -21,19 +22,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
         </nav>
-        <section class="dropdown">
-            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
-                <rect x="10" y="12" width="20" height="2" fill="gray" />
-                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
-                <rect x="17" y="23" width="13" height="2" fill="gray" />
-            </svg>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html#dvv">Step-by-step Guides</a></li>
@@ -42,15 +39,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
-        </section>
+        </div>
         <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
-            onclick="toggleColorTheme()">
+            alt="color theme toggle" onclick="toggleColorTheme()">
     </header>
     <main>
         <article class="title-card">
@@ -85,14 +82,14 @@
                 Finnish identity card or a driving license.
             </p>
         </article>
-        <section class="large-card" style="text-align: center;">
+        <div class="large-card" style="text-align: center;">
             <picture>
                 <source media="(min-width: 1300px)" srcset="../assets/images/IHH-large.jpg">
                 <source media="(min-width: 650px)" srcset="../assets/images/IHH_building1.png">
                 <source media="(min-width: 465px)" srcset="../assets/images/IHH_building2.png">
-                <img src="../assets/images/IHH_2D.png">
+                <img src="../assets/images/IHH_2D.png" alt="Digi- ja väestötietovirasto (DVV) building">
             </picture>
-        </section>
+        </div>
         <article class="large-card">
             <h2>How to register</h2>
             <ol class="step-list">
@@ -107,7 +104,7 @@
                             <a href="https://lomakkeet.dvv.fi/lomakkeet/wuY0J/lomake.html?rinnakkaislomake=en">
                                 🔗 Online form for ID code and Municipality of residence
                             </a>
-                            <section>
+                            <div>
                                 <p>You need:</p>
                                 <ul>
                                     <li>Passport or official photo ID card of a citizen of an EU Member State,
@@ -118,7 +115,7 @@
                                     <li>Study certificate or work contract</li>
                                     <li>Address in Finland or abroad</li>
                                 </ul>
-                            </section>
+                            </div>
                         </li>
                         <li>
                             <h4>
@@ -129,12 +126,12 @@
                             <a href="https://lomakkeet.dvv.fi/lomakkeet/6889/lomake.html?rinnakkaislomake=en">
                                 🔗 Online form for Municipality of residence only
                             </a>
-                            <section>
+                            <div>
                                 <p>You need:</p>
                                 <ul>
                                     <li>Address in Finland</li>
                                 </ul>
-                            </section>
+                            </div>
                         </li>
                     </ul>
                 </li>
@@ -143,16 +140,18 @@
                     <p class="line-height-1-6">After sending the form, you need to personally visit a
                         service location of the DVV.
                     </p>
-                    <a" href="https://secure.vihta.com/public-ng/dvv/#/reservation">
+                    <a href="https://secure.vihta.com/public-ng/dvv/#/reservation">
                         🔗 Book an appointment here
-                        </a>
+                    </a>
                 </li>
                 <li>
                     <h3>Attend the appointment.</h3>
-                    <p class="line-height-1-6">At the service point, a DVV specialist will review your
-                        documents and process your application. They will register your information in the Population
-                        Information System immediately.
-                        <br><br>You will receive an official printout with your personal identity code next day through
+                    <p>
+                        At the service point, a DVV specialist will review your documents and process your application.
+                        They will register your information in the Population Information System immediately.
+                    </p>
+                    <p>
+                        You will receive an official printout with your personal identity code next day through
                         email if you applied for it.
                     </p>
                 </li>

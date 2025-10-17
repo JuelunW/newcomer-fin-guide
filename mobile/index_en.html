@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
     <link rel="stylesheet" href="../styles.css">
     <script src="../script.js"></script>
 </head>
@@ -21,19 +22,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
         </nav>
-        <section class="dropdown">
-            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
-                <rect x="10" y="12" width="20" height="2" fill="gray" />
-                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
-                <rect x="17" y="23" width="13" height="2" fill="gray" />
-            </svg>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html#mobile">Step-by-step Guides</a></li>
@@ -42,37 +39,41 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
-        </section>
+        </div>
         <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
-            onclick="toggleColorTheme()">
+            alt="color theme toggle" onclick="toggleColorTheme()">
     </header>
     <main>
         <article class="title-card">
             <h1>Mobile number</h1>
-            <p>A mobile phone number is essential for day-to-day life in Finland. It is highly advisable to get a local
+            <p>
+                A mobile phone number is essential for day-to-day life in Finland. It is highly advisable to get a local
                 mobile number as soon as possible after arriving in Finland to ensure smooth communication and access to
                 services.
             </p>
-            <section class="button line-height-1-6">Country code: +358<br>
+            <div class="button">
+                Country code: +358<br>
                 Example number: 44 989 9321<br>
                 If you wan to call this number, you should dial<br>
                 +358 44 989 9321 or 044 989 9321
-            </section>
+            </div>
         </article>
         <article class="large-card">
             <h2>What is Prepaid?</h2>
-            <p>Prepaid means that you pay in advance for the mobile services you use. With a prepaid plan, you have more
+            <p>
+                Prepaid means that you pay in advance for the mobile services you use. With a prepaid plan, you have more
                 control over your spending and can avoid unexpected charges on your bill. Prepaid plans are often more
                 flexible than postpaid plans, as you can change or cancel your plan at any time without penalty.
             </p>
             <h2>What is a telephone subscribtion?</h2>
-            <p>A subscription plan is a type of mobile phone plan where you pay a fixed monthly fee for a set amount of
+            <p>
+                A subscription plan is a type of mobile phone plan where you pay a fixed monthly fee for a set amount of
                 data, minutes, and texts. With a subscription plan, you typically sign a contract with a mobile network
                 provider for a set period of time, usually 12 or 24 months. Subscription plans often come with
                 additional benefits, such as discounted or free devices, and may offer more data or minutes than prepaid
@@ -80,20 +81,11 @@
                 termination fees if you cancel your contract before the end of the agreed-upon period.
             </p>
             <h2>What is Mobiilivarmenne (mobile certification)?</h2>
-            <p>Mobiilivarmenne is a mobile authentication service in Finland that allows users to securely access online
+            <p>
+                Mobiilivarmenne is a mobile authentication service in Finland that allows users to securely access online
                 services using their mobile phone. It is a kind of strong certifications that used widly in Finland.
             </p>
         </article>
-        <!--
-        <section class="large-card">
-            <iframe src="" name="gallery" title="Image of Finland public transport"></iframe>
-            <nav>
-                <a href="" target="gallery">1</a>
-                <a href="" target="gallery">2</a>
-                <a href="" target="gallery">3</a>
-            </nav>
-        </section>
-        -->
         <article class="large-card">
             <h2>Where to buy</h2>
             <ol class="step-list">
@@ -149,18 +141,21 @@
             <section class="small-card-container">
                 <a class="small-card" href="../transport/index_en.html">
                     <h3>Public Transport</h3>
-                    <p>Finland public transport system is managed by a combination of regional and national operators.
+                    <p>
+                        Finland public transport system is managed by a combination of regional and national operators.
                     </p>
                 </a>
                 <a class="small-card" href="../grocery/index_en.html">
                     <h3>Grocery stores</h3>
-                    <p>Grocery shopping in Finland is dominated by a few major players. Some operate several different
+                    <p>
+                        Grocery shopping in Finland is dominated by a few major players. Some operate several different
                         types of stores.
                     </p>
                 </a>
                 <a class="small-card" href="../driver/index_en.html">
                     <h3>Driving permit</h3>
-                    <p>A valid driving license from any EU or EEA member state always allows you to drive in Finland,
+                    <p>
+                        A valid driving license from any EU or EEA member state always allows you to drive in Finland,
                         but licenses issued by other countries may have different rules.
                     </p>
                 </a>
@@ -168,8 +163,10 @@
                     <h3>Medical help</h3>
                     <p>Emergency call: <strong>112</strong>, for emergency situations.</p>
                     <p>Medical helpline: <strong>116117</strong>, for urgent health matters.</p>
-                    <p>Poison Information Centre: <strong>+358 800 147 111</strong>, for preventing and treating sudden
-                        poisoning.</p>
+                    <p>
+                        Poison Information Centre: <strong>+358 800 147 111</strong>, for preventing and treating sudden
+                        poisoning.
+                    </p>
                 </a>
             </section>
         </article>

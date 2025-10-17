@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logolike" href="../home/index_en.html">Newcomer Finland Guide</a>
+        <nav>
+            <ul>
+                <li><a style="padding-left: 0px;" href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html#mobile">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
+            <ul class="dropdown-menu">
+                <li><a href="../home/index_en.html">Home</a></li>
+                <li><a href="../flow/index_en.html#mobile">Step-by-step Guides</a></li>
+                <li><a href="../contact/index_en.html">Contact</a></li>
+                <li><a href="../about/index_en.html">About</a></li>
+                <li>
+                    <select class="language-selector" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                        <option value="ru">Pусский</option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
+            alt="color theme toggle" onclick="toggleColorTheme()">
+    </header>
+    <main>
+        <article class="title-card">
+            <h1>Post system</h1>
+            <p>
+                The most common postal companies in Finland are Posti, PostNord, Pakettipiste, and Matkahuolto.
+            </p>
+        </article>
+        <section class="large-card">
+            <h2>How to return or send</h2>
+            <ol class="step-list">
+                <li>
+                    <h3>Packing your return items well. Reusing the same box or bag if it is in good condition.</h3>
+                </li>
+                <li>
+                    <ul class="option-list">
+                        <li>
+                            <h4>If you get a shipping label</h4>
+                            <p>Printing and attaching your shipping label on your parcel.</p>
+                        </li>
+                        <li>
+                            <h4>If you get a Helposti-koodi (6-digital code)</h4>
+                            <p>Write the Helposti-koodi on your parcel.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Bring your parcel to a drop-off point. It could be a parcel locker.</h3>
+                    <div>
+                        <iframe src="../assets/images/parcel-locker1.jpeg" name="gallery"
+                            title="Image of Finland parcel lockers">
+                        </iframe>
+                        <nav>
+                            <a href="../assets/images/parcel-locker1.jpeg" target="gallery">
+                                <img src="../assets/images/locker1.jpeg" alt="Matkahuolto">
+                            </a>
+                            <a href="../assets/images/parcel-locker2.jpeg" target="gallery">
+                                <img src="../assets/images/locker2.jpeg" alt="Posti">
+                            </a>
+                            <a href="../assets/images/parcel-locker3.jpeg" target="gallery">
+                                <img src="../assets/images/locker3.jpeg" alt="Pakettipiste">
+                            </a>
+                        </nav>
+                    </div>
+                </li>
+                <li>
+                    <h3>Keep the receipt or tracking number until you get your refund.</h3>
+                </li>
+            </ol>
+        </section>
+        <article class="topics">
+            <h2>You may also interseted in</h2>
+            <section class="small-card-container">
+                <a class="small-card" href="../transport/index_en.html">
+                    <h3>Public Transport</h3>
+                    <p>Finland public transport system is managed by a combination of regional and national operators.
+                    </p>
+                </a>
+                <a class="small-card" href="../grocery/index_en.html">
+                    <h3>Grocery stores</h3>
+                    <p>Grocery shopping in Finland is dominated by a few major players. Some operate several different
+                        types of stores.
+                    </p>
+                </a>
+                <a class="small-card" href="../driver/index_en.html">
+                    <h3>Driving permit</h3>
+                    <p>A valid driving license from any EU or EEA member state always allows you to drive in Finland,
+                        but licenses issued by other countries may have different rules.
+                    </p>
+                </a>
+                <a class="small-card" href="../medical/index_en.html">
+                    <h3>Medical help</h3>
+                    <p>Emergency call: <strong>112</strong>, for emergency situations.</p>
+                    <p>Medical helpline: <strong>116117</strong>, for urgent health matters.</p>
+                    <p>Poison Information Centre: <strong>+358 800 147 111</strong>, for preventing and treating sudden
+                        poisoning.</p>
+                </a>
+            </section>
+        </article>
+    </main>
+
+    <section id="call-to-action">
+        <h2>🤔🤔🤔<br>Do you still have questions? Is there a typo?</h2>
+        <p>Please contact us without hesitation. We welcome your questions and reports.</p>
+        <a class="button" href="../contact/index_en.html">Contact us</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Newcomer Finland Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

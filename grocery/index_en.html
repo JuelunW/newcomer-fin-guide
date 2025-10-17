@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
     <link rel="stylesheet" href="../styles.css">
     <script src="../script.js"></script>
 </head>
@@ -21,19 +22,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
         </nav>
-        <section class="dropdown">
-            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
-                <rect x="10" y="12" width="20" height="2" fill="gray" />
-                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
-                <rect x="17" y="23" width="13" height="2" fill="gray" />
-            </svg>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
@@ -42,20 +39,20 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
-        </section>
+        </div>
         <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
-            onclick="toggleColorTheme()">
+            alt="color theme toggle" onclick="toggleColorTheme()">
     </header>
     <main>
         <article class="title-card">
             <aside class="aside-right" style="margin: 0 20px;">
-                <img style="width: 80px; margin: 0; " src="../assets/images/grocery.png" />
+                <img style="width: 80px; margin: 0; " src="../assets/images/grocery.png" alt="grocery picture">
             </aside>
             <h1>Grocery Store</h1>
         </article>
@@ -64,7 +61,7 @@
             <ol class="step-list">
                 <li>
                     <aside class="aside-right" style="margin: 0 15px;">
-                        <img style="width: 45px; margin: 0; " src="../assets/images/S_logo.png" alt="S Group's logo" />
+                        <img style="width: 45px; margin: 0; " src="../assets/images/S_logo.png" alt="S Group's logo">
                     </aside>
                     <h3>S Group / SOK</h3>
                     <p>
@@ -77,7 +74,7 @@
                             <h4>Prisma</h4>
                             <aside class="aside-left" style="margin-right: 15px;">
                                 <img style="width: 100px; margin: 0; " src="../assets/images/Prisma-logo.png"
-                                    alt="Prisma logo" />
+                                    alt="Prisma logo">
                             </aside>
                             <p>The largest one. They call themself as hypermarket and provide you with daily food and
                                 weekend treats at the lowe prices. Their wide selection also covers family and home
@@ -87,7 +84,7 @@
                             <h4>S-kaupat / S-market</h4>
                             <aside class="aside-left" style="margin-right: 15px;">
                                 <img style="width: 100px; margin: 0; " src="../assets/images/s-kaupat-logo.webp"
-                                    alt="s-kaupat logo" />
+                                    alt="s-kaupat logo">
                             </aside>
                             <p>This is the most common S Group's grocery store you see. It provides you daily needs.</p>
                         </li>
@@ -95,9 +92,9 @@
                             <h4>Sale and Alepa</h4>
                             <aside class="aside-left" style="margin-right: 15px;">
                                 <img style="width: 60px; margin: 0; " src="../assets/images/Sale_wordmark.png"
-                                    alt="Sale logo" />
+                                    alt="Sale logo">
                                 <img style="width: 70px; margin: 0; " src="../assets/images/alepa_logo.webp"
-                                    alt="Alepa logo" />
+                                    alt="Alepa logo">
                             </aside>
                             <p>These two brands are more likely convenient store. Some of them open 24 hours.</p>
                         </li>
@@ -106,7 +103,7 @@
                 <li>
                     <aside class="aside-right" style="margin: 0 15px;">
                         <img style="width: 50px; margin: 0; " src="../assets/images/Kesko_logo.png"
-                            alt="K Group's logo" />
+                            alt="K Group's logo">
                     </aside>
                     <h3>K Group / Kesko</h3>
                     <p>"K Group is the second biggest grocery trade operator in Finland."</p>
@@ -115,7 +112,7 @@
                             <h4>K-Citymarket</h4>
                             <aside class="aside-left" style="margin-right: 15px;">
                                 <img style="width: 170px; margin: 0; " src="../assets/images/K-Citymarket_logo.png"
-                                    alt="K-Citymarket logo" />
+                                    alt="K-Citymarket logo">
                             </aside>
                             <p>
                                 K-Citymarket is a modern, Finnish hypermarket that offers its customers extensive
@@ -126,7 +123,7 @@
                             <h4>K-Supermarket</h4>
                             <aside class="aside-left" style="margin-right: 15px;">
                                 <img style="width: 180px; margin: 0; " src="../assets/images/K-Supermarket_logo.png"
-                                    alt="K-Supermarket logo" />
+                                    alt="K-Supermarket logo">
                             </aside>
                             <p>
                                 K-Supermarkets are better than standard food stores which always provide their customers
@@ -137,13 +134,13 @@
                         <li>
                             <h4>K-Market</h4>
                             <img style="width: 100px; margin: 0; " src="../assets/images/K-Market_logo.png"
-                                alt="K-Market logo" />
+                                alt="K-Market logo">
                         </li>
                     </ul>
                 </li>
                 <li>
                     <aside class="aside-right" style="margin: 0 15px;">
-                        <img style="width: 70px; margin: 0; " src="../assets/images/Lidl-Logo.png" alt="Lidl logo" />
+                        <img style="width: 70px; margin: 0; " src="../assets/images/Lidl-Logo.png" alt="Lidl logo">
                     </aside>
                     <h3>Lidl</h3>
                     <p>

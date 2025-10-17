@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newcomer Finland Guide</title>
+    <link rel="icon" href="../assets/images/logo.png">
     <link rel="stylesheet" href="../styles.css">
     <script src="../script.js"></script>
 </head>
@@ -21,19 +22,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
         </nav>
-        <section class="dropdown">
-            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="36">
-                <rect x="10" y="12" width="20" height="2" fill="gray" />
-                <rect x="10" y="17.5" width="20" height="2" fill="gray" />
-                <rect x="17" y="23" width="13" height="2" fill="gray" />
-            </svg>
+        <div class="dropdown">
+            <img src="../assets/images/burger.svg" alt="burger icon">
             <ul class="dropdown-menu">
                 <li><a href="../home/index_en.html">Home</a></li>
                 <li><a href="../flow/index_en.html">Step-by-step Guides</a></li>
@@ -42,15 +39,15 @@
                 <li>
                     <select class="language-selector" onchange="changeLanguage(this.value)">
                         <option value="en">English</option>
-                        <option value="ch">中文</option>
+                        <option value="zh">中文</option>
                         <option value="ru">Pусский</option>
-                        <option value="vi">tiếng việt</option>
+                        <option value="vi">Tiếng Việt</option>
                     </select>
                 </li>
             </ul>
-        </section>
+        </div>
         <img class="color-toggle" style="margin-left: 5px;" src="../assets/images/moon-and-sun-icon.png"
-            onclick="toggleColorTheme()">
+            alt="color theme toggle" onclick="toggleColorTheme()">
     </header>
     <main>
         <article class="title-card">
@@ -89,14 +86,14 @@
                 drive) and the validity of your driving licence. Otherwise, you need an international driving licence or
                 an official translation with your license.
             </p>
-            <a href="https://www.traficom.fi/en/transport/drivers-and-vehicles/driving-licenses/driving-finland-foreign-driving-licence"
-                alt="Driving in Finland with an EU or EEA driving licence">
+            <a
+                href="https://www.traficom.fi/en/transport/drivers-and-vehicles/driving-licenses/driving-finland-foreign-driving-licence">
                 🔗 State list and details
             </a>
         </article>
         <article class="large-card">
             <h2>How to exchange for a Finnish driver license</h2>
-            <ur class="option-list">
+            <ul class="option-list">
                 <li>
                     <h3>EU or EEA Member State</h3>
                     <p>
@@ -124,9 +121,9 @@
                         3️⃣ Schedule a driving examination at Ajovarma.<br>
                     </p>
                 </li>
-            </ur>
-            <a href="https://www.traficom.fi/en/transport/drivers-and-vehicles/driving-licenses/exchanging-foreign-driving-license-finnish-driving"
-                alt="Exchanging a foreign driving license for a Finnish driving license">
+            </ul>
+            <a
+                href="https://www.traficom.fi/en/transport/drivers-and-vehicles/driving-licenses/exchanging-foreign-driving-license-finnish-driving">
                 🔗 More details on Traficom
             </a><br><br>
             <p>If you don't have a strong identification yet but have a personal ID number, use
@@ -160,7 +157,8 @@
                 </li>
                 <li>
                     <h3>Learning and complete the driving examination</h3>
-                    <p>First, complete the Training for candidates for first driving licences (EAS). Keep the certificate
+                    <p>First, complete the Training for candidates for first driving licences (EAS). Keep the
+                        certificate
                         you receive with you during your driving practice.<br><br>
                         Once you have completed all required training and passed the driving test, you will receive your
                         driving license by mail at your address.
