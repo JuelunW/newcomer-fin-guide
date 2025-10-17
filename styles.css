@@ -193,7 +193,7 @@ nav a:hover {
     text-align: center;
     font-size: clamp(1.5rem, 4vw, 1.8rem);
     line-height: 1;
-    margin-bottom: 32px;
+    margin: 16px 0 32px 0;
     border-left: var(--primary-color) 4px solid;
 }
 
